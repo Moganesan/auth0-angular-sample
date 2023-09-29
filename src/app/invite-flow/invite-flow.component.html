@@ -1,0 +1,6 @@
+<h1>Email Id: {{email}}</h1>
+<label>Password</label>
+<input type="email" [(ngModel)]="email" placeholder="Email" />
+<input type="password" [(ngModel)]="password" placeholder="Password" />
+<button (click)="login()">Login</button>
+<button *ngIf="userId!=null" (click)="addAdmin()">Request Admin</button>
